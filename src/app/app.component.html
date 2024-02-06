@@ -1,0 +1,16 @@
+<mat-toolbar color="primary" *ngIf="isMenuRequired">
+    <div><span style="color:pink; font-size: 25px; margin-right: 10px;">User Authentication</span></div>
+    <div class="nav">
+        <a routerLink="">Home</a>
+        <a routerLink="/userList" *ngIf="isAdminuser">Users</a>
+        <a routerLink="/customers">Customers</a>
+    </div>
+    <span class="example-spacer"></span>
+    <button mat-raised-button color="warn" routerLink="/login">Log Out</button>
+
+
+</mat-toolbar>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>

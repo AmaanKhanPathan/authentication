@@ -1,0 +1,144 @@
+{
+  "users": [
+    {
+      "id": "Admin",
+      "name": "Admin",
+      "password": "admin@Admin",
+      "email": "admin@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isActive": true
+    },
+    {
+      "id": "Aman",
+      "name": "Aman",
+      "password": "aman@Aman",
+      "email": "aman@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isActive": true
+    },
+    {
+      "id": "Rohini",
+      "name": "Rohini",
+      "password": "rohini@Rohini",
+      "email": "rohini@gmail.com",
+      "gender": "female",
+      "role": "staff",
+      "isActive": true
+    },
+    {
+      "id": "User",
+      "name": "User",
+      "password": "user@User",
+      "email": "user@gmail.com",
+      "gender": "female",
+      "role": "user",
+      "isActive": true
+    },
+    {
+      "id": "Rahul",
+      "name": "Rahul",
+      "password": "rahul@Rahul",
+      "email": "rahul@gmail.com",
+      "gender": "male",
+      "role": "user",
+      "isActive": true
+    },
+    {
+      "id": "Varsha",
+      "name": "Varsha",
+      "password": "varsha@Varsha",
+      "email": "varsha@gmail.com",
+      "gender": "female",
+      "role": "user",
+      "isActive": true
+    },
+    {
+      "id": "Sania",
+      "name": "Sania",
+      "password": "sania@Sania",
+      "email": "sania@gmail.com",
+      "gender": "female",
+      "role": "quality",
+      "isActive": true
+    }
+  ],
+  "role": [
+    {
+      "code": "user",
+      "name": "user"
+    },
+    {
+      "code": "tech",
+      "name": "technician"
+    }
+  ],
+  "menu": [
+    {
+      "code": "staff",
+      "name": "staff"
+    },
+    {
+      "code": "customer",
+      "name": "customer"
+    }
+  ],
+  "roleAccess": [
+    {
+      "role": "admin",
+      "menu": "user",
+      "haveEdit" : true,
+      "haveAdd" : true,
+      "haveDelete" : true
+    },   
+    {
+      "role": "admin",
+      "menu": "customer",
+      "haveEdit" : true,
+      "haveAdd" : true,
+      "haveDelete" : true
+    },  
+    {
+      "role": "user",
+      "menu": "user",
+      "haveEdit" : false,
+      "haveAdd" : false,
+      "haveDelete" : false
+    },   
+    {
+      "role": "user",
+      "menu": "customer",
+      "haveEdit" : true,
+      "haveAdd" : true,
+      "haveDelete" : false
+    }
+  ],
+  "customers" : [
+    {
+      "id" : 1,
+      "name" : "Aman",
+      "creditLimit" : 60
+    },
+    {
+      "id" : 2,
+      "name" : "Ruby",
+      "creditLimit" : 100
+    },
+    {
+      "id" : 3,
+      "name" : "Jack",
+      "creditLimit" : 70
+    },
+    {
+      "id" : 4,
+      "name" : "Vishal",
+      "creditLimit" : 80
+    },
+    {
+      "id" : 5,
+      "name" : "Ravi",
+      "creditLimit" : 500
+    }
+  ]
+}
